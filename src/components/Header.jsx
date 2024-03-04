@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <>
-      <section className="fixed z-50 flex w-full items-center justify-between bg-[#281856] py-3">
+      <section className="flex w-full items-center justify-between bg-[#281856] py-3">
         <div className="mx-auto w-full max-w-screen-xl p-4 md:flex md:items-center md:justify-between">     
             <img
               src="../src/assets/images/logotechnodevs.png"

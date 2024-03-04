@@ -1,12 +1,16 @@
 import { Header } from "./components/Header";
-import { Main } from "./components/Main";
+import { Background } from "./components/Background";
 import { Footer } from "./components/Footer";
+import { Form } from "./components/Form";
 function App() {
   return (
     <>
+    <div className="absolute z-50 w-full">
       <Header></Header>
-      <Main></Main>
+      <Form></Form>
       <Footer></Footer>
+    </div>
+      <Background></Background>
     </>
   );
 }

@@ -1,8 +1,7 @@
-import { Form } from "./Form";
-export const Main = () => {
+
+export const Background = () => {
   return (
     <section className="h-auto">   
-      <Form></Form>
       <div className="gradient-bg h-auto">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>

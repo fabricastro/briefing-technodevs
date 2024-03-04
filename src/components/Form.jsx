@@ -3,7 +3,7 @@ export const Form = () => {
   return (
     <form
       action=""
-      className=" form-container left-1/2 top-1/2 w-[400px] -translate-x-1/2 -translate-y-50% transform justify-center justify-items-center rounded-xl bg-[#000] bg-opacity-75 p-10 shadow-md sm:w-[400px] md:w-[800px]"
+      className="w-[400px]  justify-center justify-items-center rounded-xl bg-[#000] bg-opacity-75 p-10 shadow-md sm:w-[400px] md:w-[800px] mx-auto my-10"
     >
       <div className="flex w-full flex-col flex-wrap gap-4 pt-10 md:flex-nowrap">
         <h1 className="pb-5 text-[26px] text-purple-100">
@@ -25,7 +25,7 @@ export const Form = () => {
         className="text-purple-100"
           color="success"
           label="Como nos has conocido?"
-          defaultValue={["instagram", "sitio-web"]}
+          defaultValue={["instagram"]}
         >
           <Checkbox color="default" value="instagram">Instagram</Checkbox>
           <Checkbox value="facebook">Facebook</Checkbox>
@@ -34,15 +34,15 @@ export const Form = () => {
           <Checkbox value="recomendacion">Recomendación</Checkbox>
         </CheckboxGroup>
 
-        <Input type="text" label="Sitio Web (En caso de tener)" />
+        <Input type="text" label="Sitio Web (En caso de tener)"  />
 
         <CheckboxGroup
         className="text-purple-100"
           color="success"
           label="¿Cuántos son en el equipo?"
-          defaultValue={["instagram", "sitio-web"]}
+          defaultValue={["instagram"]}
         >
-          <Checkbox color="default" value="instagram">Solo yo</Checkbox>
+          <Checkbox value="instagram">Solo yo</Checkbox>
           <Checkbox value="facebook">De 2 a 5 persona</Checkbox>
           <Checkbox value="google">De 5 a 10 personas</Checkbox>
           <Checkbox value="sitio-web">De 10 a 50</Checkbox>
@@ -52,12 +52,12 @@ export const Form = () => {
         <Input type="text" label="¿Cuánto invierten en marketing digital?" />
 
         <CheckboxGroup
-        className="text-purple-100"
+        
           color="success"
           label="¿Qué tipo de presupuesto tienen?"
-          defaultValue={["instagram", "sitio-web"]}
+          defaultValue={["instagram"]}
         >
-          <Checkbox color="default" value="instagram"> Menos de USD 1200</Checkbox>
+          <Checkbox value="instagram" className={`"label":"color:white"`} > Menos de USD 1200</Checkbox>
           <Checkbox value="facebook">Menos de USD 1200</Checkbox>
           <Checkbox value="sitio-web">Entre USD 1500 - 1800</Checkbox>
           <Checkbox value="recomendacion">Más de USD 1800</Checkbox>

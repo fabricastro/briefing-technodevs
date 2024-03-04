@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="rounded-lg bg-gray-800  shadow bottom-0 w-full">
+    <footer className="rounded-lg bg-gray-800 z-50 shadow bottom-0 w-full">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm  text-gray-400 sm:text-center">
           © 2023{" "}
